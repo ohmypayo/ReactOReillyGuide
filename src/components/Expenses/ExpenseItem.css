@@ -1,0 +1,44 @@
+.maincomponent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: burlywood;
+  vertical-align: center;
+  margin: 10px;
+  border-radius: 12px;
+}
+
+.expensedescription {
+  display:flex;
+  flex-direction: column;
+  vertical-align: center;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border-radius: 12px;
+  gap: 1rem;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+.expenseprice {
+  color: white;
+  background-color: purple;
+  vertical-align: center;
+  border-radius: 12px;
+  border: 2px solid white;
+  padding: .75rem;
+}
+
+@media (min-width: 580px){
+  .expensedescription {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+  }
+  .expenseprice{
+    font-size: 1.25rem;
+    padding: 2.5rem, 12.5rem;
+  }
+}
